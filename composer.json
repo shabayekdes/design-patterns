@@ -1,0 +1,11 @@
+{
+    "name": "shabayek/design-patterns",
+    "description": "Design patterns in php examples",
+    "authors": [
+        {
+            "name": "Esmail Shabayek",
+            "email": "esmail.shabayek@gmail.com"
+        }
+    ],
+    "require": {}
+}
