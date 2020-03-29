@@ -9,7 +9,7 @@ use Creational\AbstractFactory\Car\BenzCar;
 use Creational\AbstractFactory\Car\CarAbstractFactory;
 
 
-class AbstractFactoryTest extends TestCase
+class CarTest extends TestCase
 {
     /**
      * Can create bmw car
@@ -17,10 +17,10 @@ class AbstractFactoryTest extends TestCase
      * @test
      * @return void
      */
-    public function testCanCreateBMWCar()
+    public function test_can_create_BMW_car()
     {
-        $careFactory = new CarAbstractFactory(200000);
-        $myCar = $careFactory->createBMWCare();
+        $carFactory = new CarAbstractFactory(200000);
+        $myCar = $carFactory->createBMWCar();
 
         $this->assertInstanceOf(BMWCar::class, $myCar);
     }
@@ -31,7 +31,7 @@ class AbstractFactoryTest extends TestCase
      * @test
      * @return void
      */
-    public function testCanCreateBenzCar()
+    public function test_canC_create_Benz_car()
     {
 
         $carFactory = new CarAbstractFactory(200000);
