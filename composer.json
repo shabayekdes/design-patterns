@@ -1,11 +1,23 @@
 {
-    "name": "shabayek/design-patterns",
-    "description": "Design patterns in php examples",
-    "authors": [
-        {
-            "name": "Esmail Shabayek",
-            "email": "esmail.shabayek@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "shabayek/design-patterns",
+  "description": "Design patterns in php examples",
+  "authors": [
+    {
+      "name": "Esmail Shabayek",
+      "email": "esmail.shabayek@gmail.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Creational\\": "src/Creational"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
 }
